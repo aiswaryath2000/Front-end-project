@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="styleSheet.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo"><img src="images/image2.png" alt="" /></div>
+      <ul>
+        <li>
+          <button><div class="normal-btn" id="ExUsr">Sign In</div></button>
+        </li>
+        <li>
+          <div class="normal-btn">
+            <a href="#"> <img src="images/Vector.svg" alt="" /></a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <header class="wrapper">
+      <div class="left-card">
+        <div class="card-cap">
+          Year’s end is neither an end nor a beginning but a going on.
+        </div>
+        <p>
+          Join us to celebrate the last night of the year across the country.
+        </p>
+        <button><div class="blue-btn" id="NewUsr">Create account</div></button>
+        <div class="reg">
+          <img src="images/Ellipse 490.svg" alt="" />
+          <img src="images/Ellipse 491.svg" alt="" />
+          <img src="images/Ellipse 492.svg" alt="" />
+          <p>+ 23547 registrations</p>
+        </div>
+      </div>
+
+      <div class="content-row">
+        <div class="content-box">
+          <div class="ctbx-head">
+            <img src="images\Vector(1).svg" alt="" />A single source of
+            truth
+          </div>
+          <p>
+            When you add work to your Slate calendar we automatically calculate
+            useful insights
+          </p>
+        </div>
+        <div class="content-box">
+          <div class="ctbx-head">
+            <img src="images\Vector(2).svg" alt="" />Intuitive interface
+          </div>
+          <p>
+            When you add work to your Slate calendar we automatically calculate
+            useful insights
+          </p>
+        </div>
+        <div class="content-box">
+          <div class="ctbx-head">
+            <img src="images\Vector(3).svg" alt="" />Or with rules
+          </div>
+          <p>
+            When you add work to your Slate calendar we automatically calculate
+            useful insights
+          </p>
+        </div>
+      </div>
+    </header>
+    <section class="wrapper2">
+      <footer>
+        <div id="addNewAc">
+          <div class="card">
+            <h3 class="card-head">Add New Account</h3>
+            <div class="form">
+              <form action="index1.html" method="get">
+                <div class="column">
+                  <div class="input-row">
+                    <label for="name" class="lab">Name</label>
+                    <input type="text" class="n-field" />
+                  </div>
+                  <div class="input-row">
+                    <label for="email" class="lab">Email</label>
+                    <input type="text" class="t-field" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="input-row">
+                    <label for="organisation" class="lab">Organisation</label>
+                    <input type="text" class="t-field" />
+                  </div>
+                  <div class="input-row">
+                    <label for="role" class="lab">Role</label>
+                    <select name="role" id="role" class="d-field">
+                      <option value="scholar">scholar</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="input-row">
+                    <label for="pass" class="lab">Password:</label>
+                    <div class="pass-container">
+                      <input
+                        type="password"
+                        id="password"
+                        autocomplete="current-password"
+                        class="t-field"
+                      />
+                      <span
+                        class="password-toggle"
+                        onclick="togglePasswordVisibility()"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="input-row">
+                    <label for="cpass" class="lab">Confirm Password</label>
+                    <div class="pass-container">
+                      <input
+                        type="password"
+                        id="c_password"
+                        autocomplete="current-password"
+                        class="t-field"
+                      />
+                      <div
+                        class="cpassword-toggle"
+                        onclick="toggleCPasswordVisibility()"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="input-row">
+                    <label for="summary" class="lab">Profile summary:</label>
+                    <textarea
+                      name="summery"
+                      id=""
+                      cols=""
+                      rows="10"
+                      class="t-field"
+                      style="width: 735px; height: 200px"
+                    ></textarea>
+                  </div>
+                </div>
+                <a class="ExUsr" href="#">Already have an account ?</a>
+                <div class="container">
+                  <button type="submit" class="blue-btn">Create account</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div id="SignUpAcc" style="display: none">
+          <div class="card-sign">
+            <h3 class="card-head">Sign In Your Account</h3>
+            <div class="form">
+              <form action="index1.html" method="get">
+                <div class="column">
+                  <div class="input-row">
+                    <label for="name" class="lab">Name</label>
+                    <input type="text" class="n-field" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="input-row">
+                    <label for="email" class="lab">Email</label>
+                    <input type="text" class="t-field" />
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="input-row">
+                    <label for="pass" class="lab">Password:</label>
+                    <div class="pass-container">
+                      <input
+                        type="password"
+                        id="s_password"
+                        autocomplete="current-password"
+                        class="t-field"
+                      />
+                      <span
+                        class="sign-password-toggle"
+                        onclick="toggleSignPasswordVisibility()"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <button type="submit" class="blue-btn">Create account</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </div>
+    <script src="main.js"></script>
+  </body>
+</html>
